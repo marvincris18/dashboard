@@ -53,34 +53,12 @@ div.dashboard {
     margin:15px 0;
 }
 
-.main {
-    background-color: orange;
-}
+
 
 footer {
     background: gray;
-   
-}
-
-header {
-    grid-area: 1/2/3/5;
-    display:grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(3,1fr);
-}
-
-.header {
-    grid-area: 2/1/2/4;
-    background-color: violet;
-}
-
-.search{
-    grid-area: 1/1/1/4;
-    background-color: yellowgreen;
-}
-
-footer {
     grid-area: 5/2/6/5;
+   
 }
 
 
@@ -91,6 +69,7 @@ footer {
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
    
 }
 
@@ -140,6 +119,7 @@ footer {
     background-color: #f0f4fa; /* light background like the image */
     padding: 1rem;
     border-radius: 12px;
+    margin-top: 30px;
     
 }
 
@@ -175,15 +155,6 @@ footer {
     flex-shrink: 0;
 }
 
-.username {
-    display:flex;
-    flex-direction: column;
-}
-
-.trend .user {
-    font-weight: bold;
-    margin: 0;
-}
 
 .trend .text {
     margin: 0;
@@ -199,6 +170,8 @@ footer {
 .cards{
     font-size: 12px;
     grid-area: 3/2/5/4;
+    margin-top: 30px;
+   
     
 
 }
@@ -309,4 +282,95 @@ h3 {
     width: 20px;
     height: 20px;
     opacity: 0.7;
+}
+
+
+
+header {
+    grid-area: 1/2/3/5;
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    
+
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.search{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+   
+}
+
+.right {
+    display: flex;
+    gap:15px;
+    padding-right: 30px;
+ 
+}
+
+.left {
+    display:flex;
+    gap:15px;
+    padding-left: 30px;
+   
+}
+
+p{
+    margin:5px
+}
+
+input {
+    width: 400px;
+    margin: 5px ;
+    padding-left: 15px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.wrapper {
+    display:flex;
+    flex-direction: column;
+    font-size: 1rem;
+    height: auto;
+}
+p.username {
+
+    font-weight: 900;
+}
+
+header img {
+    border: 3px solid #4CAF50; /* Green border */
+    border-radius: 8px;        /* Rounded corners */
+    padding: 4px;              /* Space around the image */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease;
+    width: 60px;
+}
+
+header img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    cursor: pointer;
+}
+
+button {
+    width: 150px;
+    background-color: rgb(108, 136, 228);
+    border-radius: 30px;
+    margin: 2px 0px 2px 20px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    height: 40px;
 }
