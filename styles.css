@@ -64,10 +64,10 @@ footer {
 
 
 .announcements {
-    background-color: #f1f6fb; /* soft blue background */
+    background-color: #e6eef4;
     grid-area: 3 / 4 / 4 / 5;
     padding: 1.5rem;
-    border-radius: 12px;
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     margin-top: 30px;
    
@@ -116,9 +116,9 @@ footer {
 }
 
 .trends {
-    background-color: #f0f4fa; /* light background like the image */
+    background-color: #e6eef4; 
     padding: 1rem;
-    border-radius: 12px;
+    border-radius: 20px;
     margin-top: 30px;
     
 }
@@ -220,6 +220,7 @@ footer {
     background-color: #e6eef4;
     padding: 20px;
     max-width: 100%;
+    border-radius: 20px;
 }
 
 h3 {
@@ -365,12 +366,20 @@ header img:hover {
 }
 
 button {
-    width: 150px;
+    width: 130px;
     background-color: rgb(108, 136, 228);
-    border-radius: 30px;
+    border-radius: 25px;
     margin: 2px 0px 2px 20px;
     border: none;
     color: white;
     font-size: 1.5rem;
     height: 40px;
 }
+
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add some padding around the content */
+    text-align: center; /* Center the text content */
+  }
+  
